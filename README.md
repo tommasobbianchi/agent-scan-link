@@ -28,10 +28,6 @@ export SCAN_LINK_HOSTS="desk=me@desk.local laptop=me@192.168.1.20"   # ssh key a
 
 A generic Claude Code skill: the procedure for turning a mesh into a parametric STEP with ScanRuler (pair, read the guides ScanRuler serves, model feature by feature, verify numerically, export).
 
-## `examples/bottom_bracket`
-
-A worked result: a 50 x 50 x 50 mm bracket rebuilt as an 18-feature parametric model, STEP export and report. Checked against the source mesh with ScanRuler's volume comparison at 0.1 mm: no excess and no missing volume. The source was a CAD tessellation, so this shows the workflow, not scan-noise handling.
-
 ## Caveats
 
 - ScanRuler sends what the agent reads (measurements, pictures, file names) to your LLM provider. Do not use it on confidential or personal data.
